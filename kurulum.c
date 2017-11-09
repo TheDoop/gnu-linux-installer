@@ -25,7 +25,7 @@ char* r35 = "\033[35;1m";
 char* r36 = "\033[36;1m";
 char* r37 = "\033[37;1m";
 char* son = " \033[0m";
-
+int version = 1;
 int main(){
 int i = 8; 
 clear(); 
@@ -50,6 +50,7 @@ return 0;
 
 int menu(){
 int i = 0; 
+printf("%sGNU/Linux kurucu %sv%d%s \n%s%s",r37,r31,version,r37,son,"\n"); 
 printf("%s1%s Disk formatlama%s%s",r31,r37,son,"\n"); 
 printf("%s2%s Dizin Bağlama%s%s",r31,r37,son,"\n"); 
 printf("%s3%s Dosya Koplayala%s%s",r31,r37,son,"\n"); 
